@@ -45,6 +45,7 @@
   <ItemGroup>
     <NativeReference Include="Native References/iflyMSC.framework">
       <Kind>Framework</Kind>
+      <LinkerFlags>-ObjC  -lz -lc++ -framework CoreLocation -framework CoreTelephony -framework AVFoundation  -framework AddressBook  -framework AudioToolbox -framework Contacts -framework SystemConfiguration   -framework QuartzCore  -framework UIKit   -framework Foundation  -framework CoreGraphics </LinkerFlags>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
