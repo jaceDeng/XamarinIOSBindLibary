@@ -27,8 +27,8 @@ namespace IFlyMSC.iOS
         // +(BOOL)initRecordingAudioSession;
         [Static]
         [Export("initRecordingAudioSession")]
-        ////[Verify(MethodToProperty)]
-        bool InitRecordingAudioSession { get; }
+     
+        bool InitRecordingAudioSession();// { get; }
     }
 
     // @interface IFlyDataUploader : NSObject
@@ -188,7 +188,7 @@ namespace IFlyMSC.iOS
         // -(BOOL)start;
         [Export("start")]
         //[Verify(MethodToProperty)]
-        bool Start { get; }
+        bool Start();
 
         // -(void)cancel;
         [Export("cancel")]
@@ -1031,7 +1031,7 @@ namespace IFlyMSC.iOS
         // -(BOOL)destroy;
         [Export("destroy")]
         //[Verify(MethodToProperty)]
-        bool Destroy { get; }
+        bool Destroy();// { get; }
 
         // -(BOOL)setParameter:(NSString *)value forKey:(NSString *)key;
         [Export("setParameter:forKey:")]
@@ -1148,7 +1148,7 @@ namespace IFlyMSC.iOS
         // -(BOOL)destroy;
         [Export("destroy")]
         //[Verify(MethodToProperty)]
-        bool Destroy { get; }
+        bool Destroy();//
 
         // -(BOOL)setParameter:(NSString *)value forKey:(NSString *)key;
         [Export("setParameter:forKey:")]
@@ -1249,7 +1249,7 @@ namespace IFlyMSC.iOS
         [Static]
         [Export("destroy")]
         //[Verify(MethodToProperty)]
-        bool Destroy { get; }
+        bool Destroy();
 
         // -(BOOL)setParameter:(NSString *)value forKey:(NSString *)key;
         [Export("setParameter:forKey:")]
@@ -1313,7 +1313,7 @@ namespace IFlyMSC.iOS
         [Static]
         [Export("destroy")]
         //[Verify(MethodToProperty)]
-        bool Destroy { get; }
+        bool Destroy();
 
         // +(IFlySpeechUtility *)getUtility;
         [Static]
@@ -1378,7 +1378,7 @@ namespace IFlyMSC.iOS
         // -(NSString *)toString;
         [Export("toString")]
         //[Verify(MethodToProperty)]
-        string ToString { get; }
+        string ToString();
 
         // -(NSArray *)getWords:(NSString *)key;
         [Export("getWords:")]
@@ -1442,7 +1442,7 @@ namespace IFlyMSC.iOS
         // -(BOOL)start;
         [Export("start")]
         //[Verify(MethodToProperty)]
-        bool Start { get; }
+        bool Start();
 
         // -(void)stop;
         [Export("stop")]
