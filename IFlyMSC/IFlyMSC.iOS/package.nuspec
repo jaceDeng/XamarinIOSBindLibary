@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <!--*-->
+    <id>IFlyMSC.iOS</id>
+    <!--*-->
+    <version>1.0.6883.24936</version>
+    <title>IFlyMSC.iOS</title>
+    <!--*-->
+    <authors>sugar</authors>
+    <owners>sugar</owners>
+    <!--
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--*-->
+    <description>讯飞语音识别 ios  xamarin 绑定库</description>
+    <!--*-->
+    <releaseNotes>讯飞语音识别 ios  xamarin 绑定库</releaseNotes>
+    <copyright>${AuthorCopyright}</copyright>
+    <tags>xamarin ios</tags>
+    <dependencies>
+      <!--
+      <dependency id="SampleDependency" version="1.0" />
+-->
+    </dependencies>
+  </metadata>
+</package>

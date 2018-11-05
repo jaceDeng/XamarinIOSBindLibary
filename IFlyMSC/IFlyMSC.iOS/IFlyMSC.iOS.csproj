@@ -48,5 +48,8 @@
       <LinkerFlags>-ObjC  -lz -lc++ -framework CoreLocation -framework CoreTelephony -framework AVFoundation  -framework AddressBook  -framework AudioToolbox -framework Contacts -framework SystemConfiguration   -framework QuartzCore  -framework UIKit   -framework Foundation  -framework CoreGraphics </LinkerFlags>
     </NativeReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="package.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
