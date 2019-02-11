@@ -216,7 +216,7 @@ namespace XgPushiOS
 
         // -(void)startXGWithAppID:(id)appID appKey:(id)appKey delegate:(id<XGPushDelegate> _Nullable)delegate;
         [Export("startXGWithAppID:appKey:delegate:")]
-        void StartXGWithAppID(NSString appID, NSString appKey, [NullAllowed] XGPushDelegate @delegate);
+        void StartXGWithAppID(string appID, string appKey, [NullAllowed] XGPushDelegate @delegate);
 
         // -(void)stopXGNotification;
         [Export("stopXGNotification")]
@@ -244,7 +244,7 @@ namespace XgPushiOS
 
         // -(id)sdkVersion;
         [Export("sdkVersion")]
-       // [Verify(MethodToProperty)]
-        NSObject SdkVersion { get; }
+        // [Verify(MethodToProperty)]
+        string SdkVersion { get; }
     }
 }

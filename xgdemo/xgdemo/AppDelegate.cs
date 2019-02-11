@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using XgPushiOS;
 
 namespace xgdemo
 {
@@ -21,8 +22,13 @@ namespace xgdemo
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
             //  [[XGPush defaultManager] startXGWithAppID:<#your AppID#> appKey:<#your appKey#>  delegate:<#your delegate#>];
-            XgPushiOS.XGPush.DefaultManager.StartXGWithAppID(new NSString( ""),new NSString(""),null);
-           // XgPush.iOS.XGPush.start
+            //XgPushiOS.XGPush.DefaultManager.StartXGWithAppID(new NSString( ""),new NSString(""),null);
+            XgPushiOS.XGPush.DefaultManager.StartXGWithAppID("", "", new XGPushDelegate2()
+            {
+               
+
+            });
+            // XgPush.iOS.XGPush.start
             return true;
         }
 
@@ -55,6 +61,14 @@ namespace xgdemo
         public override void WillTerminate(UIApplication application)
         {
             // Called when the application is about to terminate. Save data, if needed. See also DidEnterBackground.
+        }
+    }
+
+    public  class XGPushDelegate2: XGPushDelegate
+    {
+        public override void XgPushDidFinishStart(NSObject isSuccess, NSObject error)
+        {
+            base.XgPushDidFinishStart(isSuccess, error);
         }
     }
 }
